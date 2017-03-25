@@ -62,7 +62,6 @@
 
     $(document).ready(function () {
         SetGlobals();
-        InitializeButton();
         InitializeConfetti();
 
         $(window).resize(function () {
@@ -74,10 +73,6 @@
 
     });
 
-    function InitializeButton() {
-        $('#stopButton').click(DeactivateConfetti);
-        $('#startButton').click(RestartConfetti);
-    }
 
     function SetGlobals() {
         canvas = document.getElementById("canvas");
